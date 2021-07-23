@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,24 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/ico" href="./images/developer.jpg">
-  <meta name="description" content="Portfolio web site - RESPONSIVE, Developer: Umidjon Karabev 2021-year 23-may ">
-  <meta name="keywords" content="Web sayt, Portfolio, Umidjon , Umidjondev, Umidjon Karbaev , HTML,CSS, JAVASCRIPT">
-  <meta name="author" content="Umidjon Karabev ~ UmidjonDev">
   <title>Umidzhondev</title>
+  <!-- Boostrap 5 Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Css file -->
   <link rel="stylesheet" href="./css/main.css" />
-  <!-- Boostrap 5 Css -->
-  <!-- <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css"> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  <!-- Fontawesome Css -->
-  <!-- <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />  
- <!-- AOS CSS -->
+  <!-- Fontawesome Css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+  <!-- AOS Css -->
   <link rel="stylesheet" href="./aos/dist/aos.css">
 </head>
 
 <body>
 
-  <!-- *loader section -->
+  <!-- loader section -->
   <div class="loading">
     <div class="main-ld">
       <div class="dot">
@@ -31,13 +28,13 @@
       </div>
     </div>
   </div>
-  <!-- *loader section -->
+  <!-- loader section -->
 
-  <!--* Navbar -->
-  <nav id="nav" class="navbar fixed">
+  <!-- Navbar -->
+  <nav id="nav" class="navbar w-100 fixed">
     <div class="max-width">
       <div class="logo">
-        <a href="index.html"> Umid<span id="logo" class="logo__span">jon</span> </a>
+        <a href="index.html"> Umid<span>jon</span> </a>
       </div>
       <input type="checkbox" id="check" name="check">
       <label for="check" class="label">
@@ -409,15 +406,14 @@
             <div class="contact__content-forms">
               <div class="text">Message me</div>
               <form class="form needs-validation" novalidate>
-                <div class="row2 pt-4 d-flex align-items-center">
-                  <div class="col-md-6 col-sm-12  has-validated name">
+                <div class="row pt-4">
+                  <div class="col-md-6  has-validated name">
                     <input type="text" class="form-control" placeholder="Name" required />
                     <div class="invalid-feedback">
                       Ismingizni kiriting!
                     </div>
                   </div>
-                  &nbsp;
-                  <div class="col-md-6 col-sm-12 c-c-f-2 has-validated email">
+                  <div class="col-md-6 c-c-f-2 has-validated email">
                     <input type="email" class="form-control" placeholder="Email" required />
                     <div class="invalid-feedback">
                       Emailingizni kiriting!
@@ -459,36 +455,34 @@
   <!-- Footer section styles end -->
 
   <!-- Bootsrap 5 Js -->
-  <!-- <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script> -->
-  <script>
-    window.addEventListener("scroll",  () => {
-      let navScroll = document.getElementById("nav");
-      let navLink = document.querySelector('.nav-link')
-      let logo = document.querySelector('.logo')
-      navScroll.classList.toggle("nav-fixed", window.scrollY > 5);
-      logo.classList.toggle("white")
-      navLink.classList.toggle("white")
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  <!-- Scrool JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Scrool JS -->
   <!-- Form validation Js -->
-   <script>
+  <script>
     (function () {
       'use strict'
       var forms = document.querySelectorAll('.needs-validation')
       Array.prototype.slice.call(forms)
-        .forEach(function (form) {
+      .forEach(function (form) {
           form.addEventListener('submit', function (event) {
             if (!form.checkValidity()) {
               event.preventDefault()
-              event.stopPropagation();
+              event.stopPropagation()
             }
-
+            
             form.classList.add('was-validated')
           }, false)
         })
     })()
-  </script> 
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      let navScroll = document.getElementById("nav");
+      navScroll.classList.toggle("nav-fixed", window.scrollY > 5);
+      let navLink = document.querySelector(".nav-link");
+      navLink.classList.toggle("color-white")
+    });
+  </script>
   <!-- AOS Js -->
   <script src="./aos/dist/aos.js"></script>
   <script>

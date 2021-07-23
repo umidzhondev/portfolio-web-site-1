@@ -119,7 +119,6 @@ section {
   position: fixed !important;
   z-index: 999;
   position: relative;
-  width: 100% !important;
 }
 .max-width {
   max-width: 1300px;
@@ -142,7 +141,7 @@ section {
   font-weight: 500;
   text-decoration: none;
 }
-.logo__span {
+.logo > a > span {
   color: crimson !important;
 }
 .logo > a:hover {
@@ -153,14 +152,20 @@ section {
   font-weight: 500;
   margin-left: 1.5rem;
 }
-.nav-fixed{
+.color-white{
+  color: #fff !important;
+}
+.nav-fixed {
   background-color: crimson !important;
   padding: 10px 0 !important;
 }
-.white{
-  color: #fff !important;
-}
+/* #nav.fixed .logo,.nav-link{
+  color: #fff;
+}  */
 #nav.nav-fixed .logo a span {
+  color: #fff !important;
+} 
+#nav.nav-fixed .label #btn{
   color: #fff !important;
 }
 .nav-link:active {
@@ -168,8 +173,8 @@ section {
   transform: scale(1.2);
 }
 .nav-link {
-  transition: all 0.5s ease !important;
-  color: #fff !important;
+  transition: all 0.5s ease;
+  color: #fff;
   position: relative;
 }
 .nav-item > .nav-link:hover {
@@ -210,16 +215,12 @@ section {
   transform: scaleX(1.2);
   transform-origin: right;
 }
-#nav.nav-fixed .label #btn{
-  color: #fff !important  ;
-}
 .label #btn,
 .label #cancel {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  /* right: 50px; */
-  left: 50%;
+  right: 50px;
   font-size: 1.7rem;
   cursor: pointer;
   display: none;
@@ -713,9 +714,6 @@ section {
   height: 47px;
   width: 170px;
 }
-.form .bug{
-  align-items: center !important;
-}
 .form-btn > button {
   width: 100%;
   height: 100%;
@@ -792,9 +790,6 @@ footer span a:hover {
     font-size: 20px;
     color: #fff;
     width: 35%;
-  }
-  #btn{
-    color: crimson !important;
   }
   #check:checked ~ .nav {
     right: 0 !important;
