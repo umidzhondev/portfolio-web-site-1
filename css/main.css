@@ -209,6 +209,9 @@ section {
   transform: scaleX(1.2);
   transform-origin: right;
 }
+#nav.nav-fixed .label #btn{
+  color: #fff !important  ;
+}
 .label #btn,
 .label #cancel {
   position: absolute;
@@ -218,10 +221,7 @@ section {
   font-size: 1.7rem;
   cursor: pointer;
   display: none;
-  color: crimson;
-}
-#nav.fixed .label #btn{
-  color: #fff !important;
+  color: crimson !important;
 }
 #check {
   display: none;
@@ -790,6 +790,9 @@ footer span a:hover {
     font-size: 20px;
     color: #fff;
     width: 35%;
+  }
+  #btn{
+    color: crimson !important;
   }
   #check:checked ~ .nav {
     right: 0 !important;
