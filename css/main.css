@@ -141,7 +141,7 @@ section {
   font-weight: 500;
   text-decoration: none;
 }
-.logo > a > span {
+.logo__span {
   color: crimson !important;
 }
 .logo > a:hover {
@@ -152,14 +152,14 @@ section {
   font-weight: 500;
   margin-left: 1.5rem;
 }
-#nav.fixed {
+.nav-fixed{
   background-color: crimson !important;
   padding: 10px 0 !important;
 }
-#nav.fixed .logo,.nav-link{
-  color: #fff;
-} 
-#nav.fixed .logo a span {
+.white{
+  color: #fff !important;
+}
+#nav.nav-fixed .logo a span {
   color: #fff !important;
 }
 .nav-link:active {
@@ -174,7 +174,7 @@ section {
 .nav-item > .nav-link:hover {
   color: crimson;
 }
-#nav.fixed .nav-link:hover{
+#nav.nav-fixed .nav-link:hover{
   color: #fff;
 }
 .nav-link::before {
