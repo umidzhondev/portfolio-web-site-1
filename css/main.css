@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 section {
   padding: 100px 0;
@@ -119,6 +119,7 @@ section {
   position: fixed !important;
   z-index: 999;
   position: relative;
+  width: 100% !important;
 }
 .max-width {
   max-width: 1300px;
@@ -217,7 +218,8 @@ section {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  right: 50px;
+  /* right: 50px; */
+  left: 50%;
   font-size: 1.7rem;
   cursor: pointer;
   display: none;
