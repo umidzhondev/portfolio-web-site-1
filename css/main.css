@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 section {
   padding: 100px 0;
